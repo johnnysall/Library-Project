@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Library</title>
+</head>
+<body>
+    <div id="Header">
+        <p>Library</p>
+    </div>
+
+    <div id="addBookBtn" class="btn">Add Book</div>
+
+    <div id="bookGrid"></div>
+
+    <div id="newBookModal" class="modal">
+        <div class="modal-content">
+            <span id="newBookModalCloseBtn" class="close">&times;</span>
+            <form id="addBookForm">
+                <label for="bookTitle">Book Title</label>
+                <input type="text" id="bookTitle" name="firstname" placeholder="Book Title..">
+            
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" placeholder="Author..">
+            
+                <label for="pages">Pages</label>
+                <input type="number" id="pages" name="pages" placeholder="Number of Pages..">
+
+                <label for="isRead">Have you Read it?</label>
+                <select id="isRead" name="isRead">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                  </select>
+              
+                <div id="addBookSubmit" class="btn" type="submit" value="Submit">Submit</div>
+              </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/Library.js"></script>
+</body>
+</html>
